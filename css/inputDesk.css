@@ -81,7 +81,7 @@ a {
 * {
   font-family: "IRANSansWeb400";
 }
-
+.aboutUs .section1 .title,
 article .section1 .title {
   background: linear-gradient(
     90deg,
@@ -92,7 +92,14 @@ article .section1 .title {
     rgba(33, 34, 35, 0) 100%
   );
 }
+.pause {
+  opacity: 1;
+}
 
+.play {
+  opacity: 0;
+  display: none;
+}
 .articlePaginetion .swiper-pagination-bullet {
   opacity: 1;
   height: 12px;
