@@ -709,8 +709,17 @@ video {
   clear: none;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-6 {
@@ -870,6 +879,12 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1803,9 +1818,19 @@ video {
   border-style: none;
 }
 
+.border-b-b1 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(218 218 218 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-b4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 34 35 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1933,6 +1958,22 @@ video {
   padding-right: 1.25rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pr-24 {
+  padding-right: 6rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1987,6 +2028,24 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-IRANSansWeb400 {
+  font-family: IRANSansWeb400, IRANSansWeb400;
+}
+
+.font-IRANSansWeb500 {
+  font-family: IRANSansWeb500, IRANSansWeb500;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2063,6 +2122,16 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-b1 {
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-b2 {
+  --tw-text-opacity: 1;
+  color: rgb(169 169 169 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2374,6 +2443,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2558,6 +2631,12 @@ video {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 480px) {
