@@ -45,7 +45,8 @@ module.exports = {
       'orange':'#F37021',
       'orange1':'#E96C20',
       'gray2':'#ECECEC',
-      'gray3':'#464646'
+      'gray3':'#464646',
+      'yellow1':'#FFEC87'
         
     },
     fontFamily: {
@@ -90,6 +91,7 @@ module.exports = {
          '24':'24px',
          '46.96':'46.96px',
          '16.41':'16.41px',
+         '14.06':'14.06px',
        
 
       },
