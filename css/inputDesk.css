@@ -94,6 +94,13 @@
   body {
     transition: 0.3s ease-out;
     overflow-x: hidden;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+  }
+  body.horizontal{
+    transition: 0.3s ease-out;
+    overflow-x: hidden;
     max-width: 100%;
     width: 100%;
     overscroll-behavior: none;
