@@ -51,3 +51,48 @@
     font-style: normal;
     font-display: swap;
   }
+
+  h1{
+    font-size: 18px;
+    font-family: "IRANSansWeb700";
+    line-height: 26px;
+  }
+  h2 , h3{
+    font-size: 16px;
+    font-family: "IRANSansWeb500";
+    line-height: 25px;
+  }
+  h4 , h5{
+    font-size: 14px;
+    font-family: "IRANSansWeb400";
+    line-height: 24px;
+  }
+  h6{
+    font-size: 12px;
+    font-family: "IRANSansWeb300";
+    line-height: 22px;
+  }
+  a{
+    font-size: 14px;
+    font-family: "IRANSansWeb500";
+    line-height: 24px;
+  }
+*{
+    font-family: "IRANSansWeb400";
+}
+
+  article .section1 .title{
+    background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.55) 31.77%, rgba(33, 34, 35, 0.75) 49.48%, rgba(33, 34, 35, 0.55) 70.31%, rgba(33, 34, 35, 0) 100%);
+
+  }
+
+  .articlePaginetion .swiper-pagination-bullet{
+      opacity: 1;
+      height: 12px;
+      width: 1px;
+      background-color: white;
+      transition: 0.5s ;
+    }
+    .articlePaginetion .swiper-pagination-bullet-active{
+        height: 20px;
+    }
