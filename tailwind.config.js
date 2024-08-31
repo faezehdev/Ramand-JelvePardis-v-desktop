@@ -38,6 +38,7 @@ module.exports = {
       'b11': '#FBFBFF',
       'b12': '#BCBDBD',
       'b13': '#F9CF66',
+      'b14': '#F6F8F8',
       'white': '#FFFFFF',
       'gray-500':'#64748B',
       'f':'#ffff',
@@ -53,8 +54,12 @@ module.exports = {
       'IRANSansWeb500': ['IRANSansWeb500', 'IRANSansWeb500'],
       'IRANSansWeb700': ['IRANSansWeb700', 'IRANSansWeb700'],
       'IRANSansWeb900': ['IRANSansWeb900', 'IRANSansWeb900'],
-      'YekanBakh400':[' YekanBakh400'],
-      'YekanBakh700':[' YekanBakh700']
+      'Roboto200':[' Roboto200'],
+      'Roboto300':[' Roboto300'],
+      'Roboto400':[' Roboto400'],
+      'Roboto800':[' Roboto800'],
+      'Roboto500':[' Roboto500'],
+
     },
     extend: {
       spacing: {
@@ -83,6 +88,8 @@ module.exports = {
         '18.78':'18.78px',
          '20.25':'20.25px',
          '24':'24px',
+         '46.96':'46.96px',
+         '16.41':'16.41px',
        
 
       },
