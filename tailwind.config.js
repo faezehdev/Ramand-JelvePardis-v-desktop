@@ -43,7 +43,8 @@ module.exports = {
       'f':'#ffff',
       'orange':'#F37021',
       'orange1':'#E96C20',
-      'gray2':'#ECECEC'
+      'gray2':'#ECECEC',
+      'gray3':'#464646'
         
     },
     fontFamily: {
@@ -80,7 +81,8 @@ module.exports = {
         '31.03':'31.03px',
         '28.17':'28.17px',
         '18.78':'18.78px',
-         '20.25':'20.25px'
+         '20.25':'20.25px',
+         '24':'24px',
        
 
       },
