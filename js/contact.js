@@ -1,4 +1,6 @@
 let tabsContent = document.querySelectorAll(".tabs_content");
+let mapDiv = document.querySelectorAll(".map") 
+
 let tabsWrapper =document.querySelector(".tabs-wrapper")
 if (tabsContent.length<=1) {
     tabsWrapper.style.height = `100vh`
@@ -11,6 +13,7 @@ else{
 tabsContent.forEach((element, i) => {
   i = i + 1;
  let spColor =element.querySelectorAll(".spColor")
+ let path =element.querySelectorAll("path")
   
   spColor.forEach((sp) => {
 
@@ -36,6 +39,21 @@ tabsContent.forEach((element, i) => {
     }
     }
   });
+  path.forEach((sp) => {
+console.log(sp);
+
+    if (i==1) {
+      
+    }
+    else{
+
+    
+      sp.style.stroke=`rgb(255, 255, 255,${1- 1 /i}`
+
+    
+    }
+  });
+
   if (i == 1) {
     element.style.background = `#F6F8F8`;
     element.querySelector(".mainT").style.color="#464646"
@@ -88,6 +106,13 @@ $(".tabs_content").on("click", function () {
     setTimeout(() => {
       $(".tabs_content").removeClass("Newactive");
       $(this).addClass("Newactive");
+      
+
+
+
+
+      
+
     }, 1200);
   }
 });
@@ -114,24 +139,64 @@ ScrollTrigger.create({
       setTimeout(() => {
         $(".tabs_content").removeClass("Newactive");
         $(".tabs_content").eq(nb).addClass("Newactive");
+    
+
+
+
+
+
+setTimeout(() => {
+  
+  for (let index = 0; index <=mapDiv.length; index++) {
+    if (mapDiv[index]==""||mapDiv[index]==null||mapDiv[index]==undefined) {
+      
+        
+    }
+    else{
+      let xLat = mapDiv[index].getAttribute("data-x")
+    //   let newx=new DOMParser().parseFromString(xLat, "text/xml").all[0].innerHTML;
+      let yLat = mapDiv[index].getAttribute("data-y")
+      var map = L.map(mapDiv[index]).setView([xLat,yLat], 17);
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      minZoom: "10",
+  
+      }).addTo(map);
+      
+      
+      var myIcon = L.icon({ iconUrl: "images/location-64.png", iconSize: [29,34] });
+      markerContact = L.marker([yLat, xLat], { icon: myIcon });
+      markerContact.addTo(map);
+    
+    }
+    
+    }  
+    
+}, 100);
+
+
+
+
+
+
+
+
+
+
+
+
+
       }, 1200);
     }
   },
 });
 
 
-const swiper = new Swiper('.swiper', {
-    speed : 1000,
-      loop:true,
-        // If we need pagination
-        pagination: {
-          el: '.articlePaginetion',
-          clickable : true,
-        },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.prevArt',
-        prevEl: '.nextArt',
-      },
-      });
-    
+
+
+
+
+
+
+  
+  

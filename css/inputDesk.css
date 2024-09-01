@@ -119,7 +119,7 @@ article .section1 .title {
 
 
 .stackEffect .tabs-wrapper {
-  height: 250vh;
+  /* height: 250vh; */
   position: relative;
 }
 .stackEffect .tabs {
