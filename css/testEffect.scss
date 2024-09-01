@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+.stackEffect{
+
+    .tabs-wrapper {
+        height: 250vh;
+        position: relative;
+    }
+    .tabs {
+        width: 100%;
+        height: 100vh;
+        color: var(--white-beige);
+        justify-content: flex-start;
+        align-items: stretch;
+        display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        right: 0!important;
+        top: 0!important;
+    inset: 0!important;
+    box-sizing: border-box;
+    
+    position: fixed;
+    }
+    
+    .tabs_content {
+        width: 4em;
+        opacity: 1;
+        flex: 0 auto;
+        // transition: height .6s, width .8s ease-in-out;
+        transition: 1s;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .tabs_content.is-1 {
+        background-color: var(--grey);
+    }
+    
+    .tabs_content.active {
+        width: 100%;
+        // flex: 1;
+    }
+    .tabs_content.is-2 {
+        background-color: var(--dark-slate-grey);
+    }
+    .tabs_content.is-3 {
+        background-color: #4e5a4e;
+    }
+    .tabs_content.is-4 {
+        background-color: #414b41;
+    }
+    
+    .tabs_content.is-5 {
+        background-color: #353e35;
+    }
+}

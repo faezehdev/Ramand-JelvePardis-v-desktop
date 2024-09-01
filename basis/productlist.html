@@ -1,0 +1,117 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat2" parentid="[##cms.query.catid##]"/>
+ </basis>	
+ <basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" >
+    <member request="navcatid" type="tree" name="nav" parentid="[##cms.query.catid##]"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" catid="[##cms.query.catid##]">
+     <member name="productList" type="list" size="385x429"/> 
+</basis>	
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <basis core="print" datamembername="db.nav">
+        <layout>
+            @child
+        </layout>
+        <face filter="parentcatid	=[##cms.query.catid##]">
+            <title>@title </title>
+            <meta name="description" content="@title">
+        </face>
+    </basis>
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/f-style.css">
+</head>
+<body class="bg-b4">
+    <main class="ProductList-C  overflow-hidden flex">
+   <!-- HEADER -->
+   <basis core="call" file="menu.inc" pageindex="[##cms.cms.pageindex##]" />
+   <!-- HEADER -->
+
+  <div class="Container-C w-[96%] mr-auto">
+    <div class="Top w-[95%] mx-auto flex justify-between items-center mt-[2em]">
+        <div class="Right w-full flex justify-start items-center">
+            <div class="navigation w-full flex justify-start items-center gap-2">
+                <a href="محصولات" title="محصولات" class="Item font-IRANSansWeb400 text-xs leading-18.78 font-normal text-b14">
+                     محصولات
+                </a>
+                <span class="Item font-IRANSansWeb400 text-xs leading-18.78 font-normal text-b14">
+                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5L1 7.5L8 14.5" stroke="#F6F8F8"/>
+                        </svg>
+                        
+                </span>
+                <basis core="print" datamembername="db.nav">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="parentcatid=[##cms.query.catid##]">
+                        <span class="Item font-IRANSansWeb500 text-base leading-25.04 font-normal text-b14">
+                         @title
+                        </span>
+                    </face>
+                </basis>
+           
+            </div>
+        </div>
+        <div class="Left">
+            <div class="Logo">
+                <a href="/" title="صفحه اصلی" alt="صفحه اصلی">
+                    <svg width="77" height="23" viewBox="0 0 77 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.4878 18.4064H45.8537C46.0681 18.4064 46.2824 18.4064 46.4968 18.3915C48.4073 18.2946 49.3174 17.5608 49.5055 15.6779C49.6362 14.4139 49.6211 13.1392 49.4603 11.8785C49.2215 10.0757 48.3415 9.35119 46.5194 9.14632C46.2068 9.11908 45.8929 9.10789 45.5792 9.1128C44.3926 9.1128 43.2061 9.1128 41.9575 9.1128V22.2933H41.3389C39.9361 22.2933 38.5314 22.2784 37.1267 22.2933C36.9561 22.3071 36.7849 22.2733 36.6326 22.1956C36.4804 22.1179 36.3532 21.9995 36.2655 21.8538C34.271 19.0961 32.2709 16.3434 30.2651 13.5957L29.5976 12.6831C29.5713 12.9774 29.5562 13.1319 29.5468 13.2865C29.4885 14.1526 29.5073 15.0298 29.3588 15.8809C28.8943 18.533 27.2095 20.2521 24.7894 21.2634C20.9158 22.8837 17.0008 22.8409 13.1309 21.2298C11.2072 20.429 9.69161 19.1327 8.71944 17.1325C6.53817 20.064 3.09515 20.7493 0.0488906 22.2989C0.0263257 22.0475 0.00188041 21.8873 0 21.729C0 20.2241 0.0112824 18.7174 0 17.2126C0 16.8401 0.0940203 16.6315 0.466341 16.4676C2.22264 15.7226 3.95449 14.9273 5.71079 14.1842C7.32418 13.5044 8.21362 12.3311 8.26439 10.5879C8.30952 9.06624 8.28695 7.5409 8.29447 6.01742C8.29447 5.78834 8.29447 5.56112 8.29447 5.29479L13.6292 5.29479V5.89263C13.6292 8.3225 13.6292 10.7536 13.6292 13.186C13.6251 13.5907 13.6427 13.9955 13.6818 14.3984C13.9056 16.4098 14.8646 17.5534 16.8315 18.0898C18.4212 18.5413 20.1182 18.4475 21.6472 17.8234C23.2399 17.1846 24.1162 16.0187 24.1463 14.3202C24.1914 11.899 24.1745 9.45921 24.182 7.02686C24.182 6.45323 24.182 5.8796 24.182 5.25754C25.9534 5.25754 27.6457 5.2445 29.34 5.27617C29.5111 5.27617 29.7161 5.5127 29.8439 5.6859C31.9349 8.54165 34.0203 11.4055 36.1 14.2774C36.2129 14.4338 36.3295 14.5884 36.5551 14.892V5.29665C36.7958 5.27803 36.9481 5.25568 37.1004 5.25568C40.4551 5.25568 43.8097 5.25568 47.1644 5.26499C47.8862 5.26444 48.6066 5.32676 49.3174 5.45124C52.138 5.96899 53.7984 7.74018 54.5431 10.3886C55.1308 12.5433 55.1683 14.809 54.6521 16.9816C53.9902 19.9466 51.7601 21.7867 48.4054 22.1965C47.5127 22.276 46.6165 22.3108 45.7202 22.3008C45.6371 22.3034 45.5543 22.2894 45.4767 22.2597C45.3992 22.2299 45.3285 22.185 45.2689 22.1275C44.3531 20.9188 43.4562 19.712 42.4878 18.4064Z" fill="#F6F8F8"/>
+                        <path d="M63.1255 22.2207H57.8867V2.57568L63.1255 2.57568V22.2207Z" fill="#F6F8F8"/>
+                        <path d="M66.2422 22.1743V18.36C66.8439 18.36 67.4231 18.3712 68.0004 18.36C70.2004 18.3097 71.2083 17.4288 71.3005 15.246C71.4039 12.8006 71.3663 10.3478 71.3851 7.90054C71.3851 7.01774 71.3851 6.13495 71.3851 5.22607H76.6766C76.7038 5.37135 76.722 5.51814 76.7311 5.66561C76.7311 8.51887 76.7424 11.374 76.7217 14.2328C76.7104 15.706 76.5336 17.155 75.8341 18.4978C74.6044 20.8725 72.5434 21.9769 69.9428 22.1631C68.7262 22.2469 67.4983 22.1743 66.2422 22.1743Z" fill="#F6F8F8"/>
+                        <path d="M16.4961 5.22415V0L21.7763 0V5.22415L16.4961 5.22415Z" fill="#F6F8F8"/>
+                        </svg>
+                        
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ProductLists w-[95%] mx-auto mb-[8em] grid gap-4
+     grid-cols-[1fr,1fr,1fr] mt-[5em] gap-y-[5em]">
+     <basis core="print" datamembername="db.productList">
+         <layout>
+             @child
+         </layout>
+         <face>
+            <a href="@link" alt="@title" title="@title" class="Product w-full flex justify-center items-start ">
+                <div class="Product w-full h-[499px] group
+                flex justify-center items-center relative flex-col">
+                    <div class="IMG w-full overflow-hidden h-full flex justify-end items-end relative">
+                        <img src="@00385X00429prp" alt="@title" title="@title" class=" h-full duration-[.8s]
+                        w-full object-cover">
+                        <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
+                        left-0 right-0 h-full w-full"></div>
+                        <div class="Overlay absolute left-0 bottom-0 z-1 w-full h-full 
+                        group-hover:bg-[#0000002c] duration-[.8s]
+                      flex justify-start items-end">
+                   
+                        </div>
+                    </div>
+                
+                    <div class="Title overflow-hidden w-full flex justify-start items-center py-[1em]">
+                        <h2 class="font-IRANSansWeb400 translate-y-[100%] opacity-0
+                         font-normal duration-[.8s] delay-[1s]
+                         text-base leading-25.04 text-b2">
+                          @title
+                        </h2>
+                    </div>
+                </div>
+               </a>
+    
+         </face>
+     </basis>
+     
+    </div>
+    <basis core="call" file="footer-v.inc" pageindex="[##cms.cms.pageindex##]" />
+  </div>
+    </main>
+<basis core="call" file="script.inc" />
+<script src="[##cms.cms.cdn##]/js/productList.js"></script>
+</body>
+</html>
