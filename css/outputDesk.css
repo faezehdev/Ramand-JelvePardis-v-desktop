@@ -673,8 +673,8 @@ video {
   right: 0px;
 }
 
-.right-\[5vw\] {
-  right: 5vw;
+.right-\[3vw\] {
+  right: 3vw;
 }
 
 .top-0 {
@@ -687,10 +687,6 @@ video {
 
 .top-\[2em\] {
   top: 2em;
-}
-
-.right-\[3vw\] {
-  right: 3vw;
 }
 
 .isolate {
@@ -789,6 +785,10 @@ video {
   margin-bottom: auto;
 }
 
+.mb-\[\.8em\] {
+  margin-bottom: .8em;
+}
+
 .mb-\[10\%\] {
   margin-bottom: 10%;
 }
@@ -797,8 +797,8 @@ video {
   margin-bottom: 2.5em;
 }
 
-.mb-\[5em\] {
-  margin-bottom: 5em;
+.mb-\[8em\] {
+  margin-bottom: 8em;
 }
 
 .ml-\[2em\] {
@@ -829,6 +829,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -853,8 +857,8 @@ video {
   margin-top: 5em;
 }
 
-.mb-\[8em\] {
-  margin-bottom: 8em;
+.mt-\[8em\] {
+  margin-top: 8em;
 }
 
 .box-border {
@@ -964,6 +968,10 @@ video {
   height: 10%;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[15\%\] {
   height: 15%;
 }
@@ -978,6 +986,10 @@ video {
 
 .h-\[30px\] {
   height: 30px;
+}
+
+.h-\[326px\] {
+  height: 326px;
 }
 
 .h-\[499px\] {
@@ -1025,6 +1037,10 @@ video {
   height: 100vh;
 }
 
+.min-h-0 {
+  min-height: 0px;
+}
+
 .w-\[16px\] {
   width: 16px;
 }
@@ -1043,6 +1059,10 @@ video {
 
 .w-\[34px\] {
   width: 34px;
+}
+
+.w-\[3vw\] {
+  width: 3vw;
 }
 
 .w-\[40\%\] {
@@ -1065,8 +1085,16 @@ video {
   width: 49%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[5vw\] {
   width: 5vw;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[683px\] {
@@ -1091,6 +1119,14 @@ video {
 
 .w-\[95vw\] {
   width: 95vw;
+}
+
+.w-\[96\%\] {
+  width: 96%;
+}
+
+.w-\[97\%\] {
+  width: 97%;
 }
 
 .w-\[this-is\\\\\] {
@@ -1121,14 +1157,6 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
-}
-
-.w-\[3vw\] {
-  width: 3vw;
-}
-
-.w-\[96\%\] {
-  width: 96%;
 }
 
 .flex-shrink {
@@ -1697,6 +1725,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1725,25 +1757,21 @@ video {
   gap: 1.8em;
 }
 
+.gap-\[3\.5em\] {
+  gap: 3.5em;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
-}
-
-.gap-y-20 {
-  row-gap: 5rem;
 }
 
 .gap-y-0 {
   row-gap: 0px;
 }
 
-.gap-y-\[\] {
-  row-gap: ;
-}
-
-.gap-y-\[2em\] {
-  row-gap: 2em;
+.gap-y-20 {
+  row-gap: 5rem;
 }
 
 .gap-y-\[5em\] {
@@ -2221,6 +2249,10 @@ video {
   border-top-color: rgb(218 218 218 / var(--tw-border-opacity));
 }
 
+.bg-\[\#0000002c\] {
+  background-color: #0000002c;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2404,6 +2436,11 @@ video {
 .py-\[1\.8em\] {
   padding-top: 1.8em;
   padding-bottom: 1.8em;
+}
+
+.py-\[10em\] {
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 .py-\[1em\] {
@@ -3014,6 +3051,10 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-\[\.8s\] {
+  transition-delay: .8s;
+}
+
 .delay-\[1s\] {
   transition-delay: 1s;
 }
@@ -3377,7 +3418,8 @@ main.ProductCat-Container .swiper-slide-active .Title h2{
   opacity: 1;
 }
 
-main.ProductCat-Container .swiper-pagination-bullet{
+main.ProductCat-Container .swiper-pagination-bullet,
+main.Product-C .swiper-pagination-bullet{
   width: 1px;
   height: 12px;
   transition: all .5s ease;
@@ -3389,9 +3431,48 @@ main.ProductCat-Container .swiper-pagination-bullet{
   opacity: 1;
 }
 
-main.ProductCat-Container .swiper-pagination-bullet-active{
+main.ProductCat-Container .swiper-pagination-bullet-active,
+main.Product-C .swiper-pagination-bullet-active{
   background-color: #FFEC87;
   height: 25px;
+}
+
+main.Product-C .Banner .Overlay{
+  background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.55) 31.77%, rgba(33, 34, 35, 0.75) 49.48%, rgba(33, 34, 35, 0.55) 70.31%, rgba(33, 34, 35, 0) 100%);
+}
+
+main.Product-C .GallerySlider .IMG::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(70, 70, 70, 0.5) 0%, rgba(70, 70, 70, 0) 100%);
+}
+
+main.Product-C .swiper-button-prev::after,
+main.Product-C .swiper-button-next::after{
+  font-size: 24px;
+}
+
+main.Product-C .Section-2 .Text p,
+main.Product-C .Section-3 .Title h2,
+main.Product-C .Section-3 .Text p,
+main.Product-C .Section-3 a{
+  transition:all .8s ease ;
+  opacity: 0;
+  transform:translateY(100%)   ;
+  -webkit-transform:translateY(100%) ;
+  -moz-transform:translateY(100%) ;
+  -ms-transform:translateY(100%) ;
+  -o-transform:translateY(100%) ;
+  -webkit-transition:all .8s ease ;
+  -moz-transition:all .8s ease ;
+  -ms-transition:all .8s ease ;
+  -o-transition:all .8s ease ;
 }
 
 @media (min-width: 480px) {
