@@ -1,4 +1,4 @@
-let Productss = document.querySelectorAll(' .Product')
+let Productss = document.querySelectorAll('.swiper-slide > .Product')
 Productss.forEach(p=>{
   console.log(p.querySelector('img'));
   
@@ -16,7 +16,6 @@ let productCat = new Swiper('.swiper-productCat',{
     spaceBetween: 30,
     mousewheel: true,
     grabCursor:true,
-    touchReleaseOnEdges:true,
     pagination: {
         el: '.swiper-pagination',
               clickable: true,

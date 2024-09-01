@@ -5,9 +5,6 @@
     <member name="social" type="view" postsql="select * from [db.social] where TypeID=245"/> 
 </basis>
 <basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
-    <member request="cat" type="tree" name="productCat1" parentid="209914" postsql="select * from [db.productCat1] where parentid=209914"/> 
-</basis>
-<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
     <member request="cat" type="tree" name="productCat2" parentid="[##cms.query.catid##]"/>
  </basis>	
 
@@ -67,7 +64,7 @@
                     <layout>
                         @child
                     </layout>
-                    <face>
+                    <face filter="catid not in ([##cms.query.catid##])">
                         <div class="swiper-slide w-full flex justify-center items-center" >
                             <div class="Product w-full flex justify-center items-start ">
                                 <div class="Product w-full h-[499px] group
@@ -100,7 +97,7 @@
                                         <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
                                         left-0 right-0 h-full w-full"></div>
                                     </div>
-                                    <a  href="[##images/@catid.pdf##]" 
+                                    <a  href="[##cms.cms.cdn##]images/@catid.pdf" 
                                     alt="@title" title="@title"  class="mt-[1em] font-IRANSansWeb400 text-xs duration-[.8s] 
                                     font-normal leading-18.78 text-b1
                                     border-b-[1px] border-b-[b6] pb-[.2em]">
