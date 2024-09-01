@@ -817,8 +817,8 @@ video {
   margin-right: 2em;
 }
 
-.mr-\[5vw\] {
-  margin-right: 5vw;
+.mr-\[3vw\] {
+  margin-right: 3vw;
 }
 
 .mr-auto {
@@ -1113,6 +1113,10 @@ video {
   width: 90%;
 }
 
+.w-\[93\%\] {
+  width: 93%;
+}
+
 .w-\[95\%\] {
   width: 95%;
 }
@@ -1127,6 +1131,10 @@ video {
 
 .w-\[97\%\] {
   width: 97%;
+}
+
+.w-\[97vw\] {
+  width: 97vw;
 }
 
 .w-\[this-is\\\\\] {
@@ -3144,13 +3152,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb500";
 
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot");
+  src: url("../_fonts/IRANSansFaNum-Medium.eot");
 
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot?#iefix")
+  src: url("../_fonts/IRANSansFaNum-Medium.eot?#iefix")
         format("embedded-opentype"),
-      url("../../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
-      url("../../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
-      url("../../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
+      url("../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
+      url("../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
+      url("../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -3162,13 +3170,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb400";
 
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
+  src: url("../_fonts/IRANSansFaNum-Regular.eot");
 
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
+  src: url("../_fonts/IRANSansFaNum-Regular.eot?#iefix")
         format("embedded-opentype"),
-      url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
-      url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
-      url("../../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
+      url("../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
+      url("../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
+      url("../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -3180,13 +3188,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb300";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot");
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
         format("embedded-opentype"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -3198,13 +3206,13 @@ video {
 @font-face {
   font-family: "IRANSansWeb700";
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
 
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+  src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
         format("embedded-opentype"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-      url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -3216,7 +3224,7 @@ video {
 @font-face {
   font-family: "Roboto200";
 
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  src: url("../_fonts/Roboto-Light.ttf") format("truetype");
 
   font-weight: 200;
 
@@ -3228,7 +3236,7 @@ video {
 @font-face {
   font-family: "Roboto300";
 
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  src: url("../_fonts/Roboto-Medium.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -3240,7 +3248,7 @@ video {
 @font-face {
   font-family: "Roboto400";
 
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../_fonts/Roboto-Regular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -3254,7 +3262,7 @@ video {
 @font-face {
   font-family: "Roboto500";
 
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../_fonts/Roboto-Regular.ttf") format("truetype");
 
   font-weight: 500;
 
@@ -3266,7 +3274,7 @@ video {
 @font-face {
   font-family: "Roboto800";
 
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("../_fonts/Roboto-Bold.ttf") format("truetype");
 
   font-weight: 800;
 
@@ -3358,12 +3366,12 @@ header .Menu-link{
 .swiper-first .swiper-slide-active .title h1,
 .swiper-first .swiper-slide-active .Text p,
 .swiper-first .swiper-slide-active .ShowMore a{
-  opacity: 1;
-  transform: unset;
-  -webkit-transform: unset;
-  -moz-transform: unset;
-  -ms-transform: unset;
-  -o-transform: unset;
+  opacity: 1 !important;
+  transform: unset !important ;
+  -webkit-transform: unset !important ;
+  -moz-transform: unset !important ;
+  -ms-transform: unset !important ;
+  -o-transform: unset !important ;
 }
 
 .Product .Overlay .Title{
@@ -3461,7 +3469,13 @@ main.Product-C .swiper-button-next::after{
 main.Product-C .Section-2 .Text p,
 main.Product-C .Section-3 .Title h2,
 main.Product-C .Section-3 .Text p,
-main.Product-C .Section-3 a{
+main.Product-C .Section-3 a,
+.Home .Clr-Container span,
+.Home .Clr-Container p,
+.Home .Clr-Container a,
+.Home .Pro-Title p,
+.Home .Section-1 .swiper-first .Text p,
+.Home .Box-About p{
   transition:all .8s ease ;
   opacity: 0;
   transform:translateY(100%)   ;

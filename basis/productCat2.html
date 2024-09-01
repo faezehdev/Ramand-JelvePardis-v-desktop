@@ -1,0 +1,175 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634"> 
+    <member name="contactus" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634"> 
+    <member name="social" type="view" postsql="select * from [db.social] where TypeID=245"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat1" parentid="209914" postsql="select * from [db.productCat1] where parentid=209914"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat2" parentid="[##cms.query.catid##]"/>
+ </basis>	
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <basis core="print" datamembername="db.productCat2">
+        <layout>
+            @child
+        </layout>
+        <face filter="catid=[##cms.query.catid##]">
+            <title>@title </title>
+            <meta name="description" content="@title">
+        </face>
+    </basis>
+ 
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/f-style.css">
+</head>
+<body class="horizontal">
+    <main class="ProductCat-Container bg-b4 relative h-screen flex flex-col justify-center items-center">
+      <!-- HEADER -->
+      <basis core="call" file="menu.inc" pageindex="[##cms.cms.pageindex##]" />
+      <!-- HEADER -->
+    <div class="Menu-Top w-[95%] mr-auto flex justify-between items-center h-[15vh] absolute top-0 left-0 z-2">
+        <div class="Left w-[48%] flex justify-start items-start mr-auto">
+            <basis core="print" datamembername="db.productCat2">
+                <layout>
+                    @child
+                </layout>
+                <face filter="catid=[##cms.query.catid##]">
+           <span class=" font-IRANSansWeb500 text-b14
+           font-medium text-base leading-25.04">
+        @title
+           </span>
+
+                </face>
+            </basis>
+        </div>
+        <div class="Right w-[48%] ml-auto flex justify-end items-start">
+            <svg width="79" height="25" viewBox="0 0 79 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43.4878 19.4064H46.8537C47.0681 19.4064 47.2824 19.4064 47.4968 19.3915C49.4073 19.2946 50.3174 18.5608 50.5055 16.6779C50.6362 15.4139 50.6211 14.1392 50.4603 12.8785C50.2215 11.0757 49.3415 10.3512 47.5194 10.1463C47.2068 10.1191 46.8929 10.1079 46.5792 10.1128C45.3926 10.1128 44.2061 10.1128 42.9575 10.1128V23.2933H42.3389C40.9361 23.2933 39.5314 23.2784 38.1267 23.2933C37.9561 23.3071 37.7849 23.2733 37.6326 23.1956C37.4804 23.1179 37.3532 22.9995 37.2655 22.8538C35.271 20.0961 33.2709 17.3434 31.2651 14.5957L30.5976 13.6831C30.5713 13.9774 30.5562 14.1319 30.5468 14.2865C30.4885 15.1526 30.5073 16.0298 30.3588 16.8809C29.8943 19.533 28.2095 21.2521 25.7894 22.2634C21.9158 23.8837 18.0008 23.8409 14.1309 22.2298C12.2072 21.429 10.6916 20.1327 9.71944 18.1325C7.53817 21.064 4.09515 21.7493 1.04889 23.2989C1.02633 23.0475 1.00188 22.8873 1 22.729C1 21.2241 1.01128 19.7174 1 18.2126C1 17.8401 1.09402 17.6315 1.46634 17.4676C3.22264 16.7226 4.95449 15.9273 6.71079 15.1842C8.32418 14.5044 9.21362 13.3311 9.26439 11.5879C9.30952 10.0662 9.28695 8.5409 9.29447 7.01742C9.29447 6.78834 9.29447 6.56112 9.29447 6.29479L14.6292 6.29479V6.89263C14.6292 9.3225 14.6292 11.7536 14.6292 14.186C14.6251 14.5907 14.6427 14.9955 14.6818 15.3984C14.9056 17.4098 15.8646 18.5534 17.8315 19.0898C19.4212 19.5413 21.1182 19.4475 22.6472 18.8234C24.2399 18.1846 25.1162 17.0187 25.1463 15.3202C25.1914 12.899 25.1745 10.4592 25.182 8.02686C25.182 7.45323 25.182 6.8796 25.182 6.25754C26.9534 6.25754 28.6457 6.2445 30.34 6.27617C30.5111 6.27617 30.7161 6.5127 30.8439 6.6859C32.9349 9.54165 35.0203 12.4055 37.1 15.2774C37.2129 15.4338 37.3295 15.5884 37.5551 15.892V6.29665C37.7958 6.27803 37.9481 6.25568 38.1004 6.25568C41.4551 6.25568 44.8097 6.25568 48.1644 6.26499C48.8862 6.26444 49.6066 6.32676 50.3174 6.45124C53.138 6.96899 54.7984 8.74018 55.5431 11.3886C56.1308 13.5433 56.1683 15.809 55.6521 17.9816C54.9902 20.9466 52.7601 22.7867 49.4054 23.1965C48.5127 23.276 47.6165 23.3108 46.7202 23.3008C46.6371 23.3034 46.5543 23.2894 46.4767 23.2597C46.3992 23.2299 46.3285 23.185 46.2689 23.1275C45.3531 21.9188 44.4562 20.712 43.4878 19.4064Z" stroke="#A9A9A9"/>
+                <path d="M64.1255 23.2207H58.8867V3.57568L64.1255 3.57568V23.2207Z" stroke="#A9A9A9"/>
+                <path d="M67.2422 23.1743V19.36C67.8439 19.36 68.4231 19.3712 69.0004 19.36C71.2004 19.3097 72.2083 18.4288 72.3005 16.246C72.4039 13.8006 72.3663 11.3478 72.3851 8.90054C72.3851 8.01774 72.3851 7.13495 72.3851 6.22607H77.6766C77.7038 6.37135 77.722 6.51814 77.7311 6.66561C77.7311 9.51887 77.7424 12.374 77.7217 15.2328C77.7104 16.706 77.5336 18.155 76.8341 19.4978C75.6044 21.8725 73.5434 22.9769 70.9428 23.1631C69.7262 23.2469 68.4983 23.1743 67.2422 23.1743Z" stroke="#A9A9A9"/>
+                <path d="M17.4961 6.22415V1L22.7763 1V6.22415L17.4961 6.22415Z" stroke="#A9A9A9"/>
+                </svg>
+
+        </div>
+    </div>
+    <div class="Product-Cat-Container w-[95vw] mr-auto flex my-auto overflow-hidden h-[80vh]">
+        <div class="swiper-productCat w-full h-full">
+            <div class="swiper-wrapper w-full h-full">
+                <basis core="print" datamembername="db.productCat2">
+                    <layout>
+                        @child
+                    </layout>
+                    <face>
+                        <div class="swiper-slide w-full flex justify-center items-center" >
+                            <div class="Product w-full flex justify-center items-start ">
+                                <div class="Product w-full h-[499px] group
+                                flex justify-center items-center relative ">
+                                <div class="Left w-[7%] h-full flex flex-col">
+                                    <span class="Current rotate-[90deg] h-fit leading-14.06 text-b2
+                                    font-Roboto500 text-xs font-medium ">02</span>
+                                    <span class="Line w-[34px] h-[1px] bg-b2 rotate-[90deg]"></span>
+                                    <span class="Name w-max h-fit rotate-[90deg] leading-14.06 text-b2
+                                   font-Roboto500 text-xs font-medium ">
+                                        PRODUCTS
+                                    </span>
+                                </div>
+                                <div class="Box w-[93%] overflow-hidden h-full flex-col flex justify-center items-center">
+                                    <div class="IMG w-full overflow-hidden h-full flex justify-end items-end relative">
+                                        <a  href="@link" alt="@title" title="@title"  class="w-full flex justify-center items-start">
+                                        <img src="@image" alt="@title" title="@title"class=" h-full duration-[.8s]
+                                        w-full object-cover"></a>
+                                        <div class="Overlay absolute left-0 bottom-0 z-1 w-full h-full  pointer-events-none
+                                        group-hover:bg-[#0000002c] duration-[.8s]
+                                      flex justify-start items-end">
+                                            <div class="Title overflow-hidden w-full flex mb-[10%] justify-start items-center py-[1.8em]">
+                                                <h2 class="font-IRANSansWeb500 translate-y-[100%] opacity-0
+                                                 font-medium mr-[1.8em] duration-[.8s] delay-[1s]
+                                                 text-xl leading-31.03 text-b1">
+                                                   @title
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
+                                        left-0 right-0 h-full w-full"></div>
+                                    </div>
+                                    <a  href="[##images/@catid.pdf##]" 
+                                    alt="@title" title="@title"  class="mt-[1em] font-IRANSansWeb400 text-xs duration-[.8s] 
+                                    font-normal leading-18.78 text-b1
+                                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                                    دانلود  کاتالوگ
+                                    </a>
+                                </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </face>
+                </basis>
+              
+            </div>
+        </div>
+    </div>
+    <div class="ShowMore  h-[10%] absolute w-[95%] flex right-0 mr-auto
+    justify-between overflow-hidden bottom-0 left-0 z-2
+    items-center">
+    <div class="Socials w-auto flex justify-start items-start mr-[2em] gap-2">
+        <basis core="print" datamembername="db.contactus">
+            <layout>
+                @child
+            </layout>
+            <face filter="TypeID=240">
+       <a href="tel:@Answer"  class="Social-link w-auto flex justify-center items-center">
+           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M3.35213 8.69661L5.8475 9.18015C7.53304 8.33414 8.57422 7.36234 9.18015 5.8475L8.71361 3.34492L9.59551 1H11.8683C12.5516 1 13.0896 1.5646 12.9875 2.24016C12.7328 3.92668 11.9817 6.98454 9.78609 9.18015C7.48038 11.4859 4.15954 12.4864 2.33185 12.8841C1.62606 13.0377 1 12.4871 1 11.7648V9.59292L3.35213 8.69661Z" stroke="#DADADA" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+               
+       </a>
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.social">
+            <layout>
+                @child
+            </layout>
+            <face filter="RowNumber=3">
+       <a href="https://wa.me/@largetext" class="Social-link w-auto flex justify-center items-center">
+           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M10.6008 4.92896L2.80078 7.62895L5.50078 8.52895M10.6008 4.92896L5.50078 8.52895M10.6008 4.92896L8.20078 11.229L5.50078 8.52895" stroke="#DADADA" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+               <path d="M7 13.3289C10.3137 13.3289 13 10.6425 13 7.32886C13 4.01515 10.3137 1.32886 7 1.32886C3.68629 1.32886 1 4.01515 1 7.32886C1 10.6425 3.68629 13.3289 7 13.3289Z" stroke="#DADADA" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+                 
+       </a>
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.social">
+            <layout>
+                @child
+            </layout>
+            <face filter="RowNumber=1">
+       <a href="https://instagram.com/@largetext" class="Social-link w-auto flex justify-center items-center">
+           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.9987 9.32454C8.47143 9.32454 9.66536 8.13061 9.66536 6.65788C9.66536 5.18512 8.47143 3.99121 6.9987 3.99121C5.52594 3.99121 4.33203 5.18512 4.33203 6.65788C4.33203 8.13061 5.52594 9.32454 6.9987 9.32454Z" stroke="#DADADA" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+               <path d="M1 9.32462V3.99129C1 2.15035 2.49239 0.657959 4.33333 0.657959H9.66666C11.5076 0.657959 13 2.15035 13 3.99129V9.32462C13 11.1656 11.5076 12.658 9.66666 12.658H4.33333C2.49239 12.658 1 11.1656 1 9.32462Z" stroke="#DADADA" stroke-width="0.9"/>
+               <path d="M10.668 2.99903L10.6757 2.99048" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+               
+       </a>
+            </face>
+        </basis>
+   </div>
+       <div class="nav w-auto ml-[2em] flex justify-end items-start">
+        <div class="swiper-pagination static mx-[0] my-[0]"></div>
+       </div>
+</div>
+    </main>
+<basis core="call" file="script.inc" />
+<script src="[##cms.cms.cdn##]/js/productCat.js"></script>
+</body>
+</html>

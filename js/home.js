@@ -184,7 +184,7 @@ $('.container-Sec').imagesLoaded( {
         y:0,
         opacity:1
       })
-      gsap.to('.Clr-Container .Text span',{
+      gsap.to('.Clr-Container span',{
         scrollTrigger: {
           trigger:'.Clr-Container',
           containerAnimation:scrollTween,
@@ -208,7 +208,7 @@ $('.container-Sec').imagesLoaded( {
       })
       gsap.to('.Pro-Title p',{
         scrollTrigger: {
-          trigger:'.Clr-Container',
+          trigger:'.Pro-Title',
           containerAnimation:scrollTween,
           start: "top top",  
         },
