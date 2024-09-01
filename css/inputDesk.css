@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: "IRANSansWeb500";
     src: url("../_fonts/IRANSansFaNum-Medium.eot");
@@ -57,12 +56,39 @@
   font-family: "Roboto200";
   src: url("../_fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 200;
+  font-family: "IRANSansWeb500";
+  src: url("../../_fonts/IRANSansFaNum-Medium.eot");
+  src: url("../../_fonts/IRANSansFaNum-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
+    url("../../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
+    url("../../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto300";
   src: url("../_fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: "IRANSansWeb400";
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
+  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
+    url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
+    url("../../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansWeb300";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -280,4 +306,152 @@ main.Product-C .Section-3 a,
   -moz-transition:all .8s ease ;
   -ms-transition:all .8s ease ;
   -o-transition:all .8s ease ;
+  font-family: "IRANSansWeb700";
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-size: 18px;
+  font-family: "IRANSansWeb700";
+  line-height: 26px;
+}
+h2,
+h3 {
+  font-size: 16px;
+  font-family: "IRANSansWeb500";
+  line-height: 25px;
+}
+h4,
+h5 {
+  font-size: 14px;
+  font-family: "IRANSansWeb400";
+  line-height: 24px;
+}
+h6 {
+  font-size: 12px;
+  font-family: "IRANSansWeb300";
+  line-height: 22px;
+}
+a {
+  font-size: 14px;
+  font-family: "IRANSansWeb500";
+  line-height: 24px;
+}
+* {
+  font-family: "IRANSansWeb400";
+}
+.aboutUs .section1 .title,
+article .section1 .title {
+  background: linear-gradient(
+    90deg,
+    rgba(33, 34, 35, 0) 0%,
+    rgba(33, 34, 35, 0.55) 31.77%,
+    rgba(33, 34, 35, 0.75) 49.48%,
+    rgba(33, 34, 35, 0.55) 70.31%,
+    rgba(33, 34, 35, 0) 100%
+  );
+}
+.pause {
+  opacity: 1;
+}
+
+.play {
+  opacity: 0;
+  display: none;
+}
+.articlePaginetion .swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 1px;
+  background-color: white;
+  transition: 0.5s;
+}
+.articlePaginetion .swiper-pagination-bullet-active {
+  height: 20px;
+}
+
+.scrollToTop {
+  opacity: 0;
+  transform: translateY(60%);
+}
+
+
+
+.stackEffect .tabs-wrapper {
+  /* height: 250vh; */
+  position: relative;
+}
+.stackEffect .tabs {
+  width: 100%;
+  height: 100vh;
+  color: var(--white-beige);
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  right: 0 !important;
+  top: 0 !important;
+  inset: 0 !important;
+  box-sizing: border-box;
+  position: fixed;
+}
+.stackEffect .tabs_content {
+  width: 4em;
+  opacity: 1;
+  flex: 0 auto;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.stackEffect .tabs_content.Newactive .tab_wrap{
+  opacity: 1!important;
+}
+.stackEffect .tabs_content.activeDisplay .tab_wrap{
+display: block!important;
+}
+/* .stackEffect .tabs_content.active .inter-onglet{
+  display: none;
+} */
+.stackEffect .tabs_content.active {
+  width: 100%;
+  flex: 1;
+}
+
+
+.inter-onglet {
+  z-index: 1;
+
+  transition: all .7s cubic-bezier(.561,.007,.363,.989);
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.tabs_content.active .inter-onglet {
+  transform: translate(-100%, 0px);
+}
+
+.inner-onglet .number span::after{
+content: "";
+width: 100%;
+height: 1px;
+display: inline-block;
+}
+.inner-onglet .number span::before{
+content: "";
+width: 100%;
+height: 1px;
+display: inline-block;
 }
