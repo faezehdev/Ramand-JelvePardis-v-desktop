@@ -3,6 +3,59 @@
 @tailwind utilities;
 
 @font-face {
+    font-family: "IRANSansWeb500";
+    src: url("../_fonts/IRANSansFaNum-Medium.eot");
+    src: url("../_fonts/IRANSansFaNum-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
+      url("../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
+      url("../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb400";
+    src: url("../_fonts/IRANSansFaNum-Regular.eot");
+    src: url("../_fonts/IRANSansFaNum-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
+      url("../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
+      url("../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb300";
+    src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../_fonts/IRANSansWeb(FaNum)_Light.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWeb700";
+    src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+      url("../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+@font-face {
+  font-family: "Roboto200";
+  src: url("../_fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
   font-family: "IRANSansWeb500";
   src: url("../../_fonts/IRANSansFaNum-Medium.eot");
   src: url("../../_fonts/IRANSansFaNum-Medium.eot?#iefix")
@@ -15,6 +68,8 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Roboto300";
+  src: url("../_fonts/Roboto-Medium.ttf") format("truetype");
   font-family: "IRANSansWeb400";
   src: url("../../_fonts/IRANSansFaNum-Regular.eot");
   src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
@@ -38,7 +93,7 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
+@font-face{
   font-family: "IRANSansWeb700";
   src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
   src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
@@ -49,6 +104,230 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "Roboto400";
+  src: url("../_fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: 500;
+
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto500";
+  src: url("../_fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 500;
+
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto800";
+  src: url("../_fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+  body {
+    transition: 0.3s ease-out;
+    overflow-x: hidden;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+  }
+  body.horizontal{
+    transition: 0.3s ease-out;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+  }
+  .container-Sec{
+    overflow-y: hidden !important;
+  }
+  .Home section:not(#sectionPin) {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-gap: 2rem;
+    margin: auto;
+    direction: rtl;
+    right: 0;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+    direction: rtl;
+  }
+  
+  #PinSection {
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    right: 0 ;
+    direction: rtl;
+    position: relative;
+ 
+  }
+  a{
+    text-decoration: none;
+  }
+  ul,li,p,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+  }
+  .Pin-Wrapp {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+
+
+  .Toggles .toggle-item:nth-child(1){
+    transform-origin: -7px 33px;
+  }
+  .Toggles .toggle-item:nth-child(3){
+    transform-origin: 7px 41px;
+  }
+  header .Menu-link{
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    -webkit-transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    -moz-transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    -ms-transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    -o-transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.swiper-first .swiper-slide-active .title h1,
+.swiper-first .swiper-slide-active .Text p,
+.swiper-first .swiper-slide-active .ShowMore a{
+  opacity: 1 !important;
+  transform: unset !important ;
+  -webkit-transform: unset !important ;
+  -moz-transform: unset !important ;
+  -ms-transform: unset !important ;
+  -o-transform: unset !important ;
+}
+.Product .Overlay .Title{
+  background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.75) 100%);
+}
+.horizontall header:hover .ov{
+  transition: all .5s ease;
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.Horizontal-Header .Logo-2{
+  transition: all .5s ease;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.horizontall header .ov,
+.horizontall header .ov{
+  background: linear-gradient(90deg, #FFEC87 0%, #DADADA 36%);
+  opacity: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+main.ProductCat-Container .Line{
+  transform: translate(-5px,23px) rotate(90deg);
+  -webkit-transform: translate(-5px,23px) rotate(90deg);
+  -moz-transform: translate(-5px,23px) rotate(90deg);
+  -ms-transform: translate(-5px,23px) rotate(90deg);
+  -o-transform: translate(-5px,23px) rotate(90deg);
+}
+main.ProductCat-Container .Name{
+  transform: rotate(90deg) translate(71px , -7px);
+}
+main.ProductCat-Container .Current{
+  transform: rotate(90deg) translate(-15px,1px);
+  -webkit-transform: rotate(90deg) translate(-15px,1px);
+  -moz-transform: rotate(90deg) translate(-15px,1px);
+  -ms-transform: rotate(90deg) translate(-15px,1px);
+  -o-transform: rotate(90deg) translate(-15px,1px);
+}
+main.ProductCat-Container .swiper-slide-active .Title h2{
+  transform: unset;
+  -webkit-transform: unset;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -o-transform: unset;
+  opacity: 1;
+}
+main.ProductCat-Container .swiper-pagination-bullet,
+main.Product-C .swiper-pagination-bullet{
+  width: 1px;
+  height: 12px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  background-color: #6B6B6B;
+  opacity: 1;
+}
+main.ProductCat-Container .swiper-pagination-bullet-active,
+main.Product-C .swiper-pagination-bullet-active{
+  background-color: #FFEC87;
+  height: 25px;
+}
+main.Product-C .Banner .Overlay{
+  background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.55) 31.77%, rgba(33, 34, 35, 0.75) 49.48%, rgba(33, 34, 35, 0.55) 70.31%, rgba(33, 34, 35, 0) 100%);
+
+}
+main.Product-C .GallerySlider .IMG::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(70, 70, 70, 0.5) 0%, rgba(70, 70, 70, 0) 100%);
+
+}
+main.Product-C .swiper-button-prev::after,
+main.Product-C .swiper-button-next::after{
+  font-size: 24px;
+}
+main.Product-C .Section-2 .Text p,
+main.Product-C .Section-3 .Title h2,
+main.Product-C .Section-3 .Text p,
+main.Product-C .Section-3 a,
+.Home .Clr-Container span,
+.Home .Clr-Container p,
+.Home .Clr-Container a,
+.Home .Pro-Title p,
+.Home .Section-1 .swiper-first .Text p,
+.Home .Box-About p{
+  transition:all .8s ease ;
+  opacity: 0;
+  transform:translateY(100%)   ;
+  -webkit-transform:translateY(100%) ;
+  -moz-transform:translateY(100%) ;
+  -ms-transform:translateY(100%) ;
+  -o-transform:translateY(100%) ;
+  -webkit-transition:all .8s ease ;
+  -moz-transition:all .8s ease ;
+  -ms-transition:all .8s ease ;
+  -o-transition:all .8s ease ;
+
 }
 
 h1 {
@@ -182,4 +461,47 @@ content: "";
 width: 100%;
 height: 1px;
 display: inline-block;
+}
+footer .Address p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.78px;
+  color: #DADADA;
+  text-align: center;
+}
+.preLoad {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10005899999521000;
+  bottom: 0;
+  overflow: hidden;
+}
+.preLoad, .preLoad .blinder {
+  transform-origin: top;
+  height: 100vh;
+}
+.preLoad .blinder {
+  width: 34%;
+  background-color:#FFEC87;
+}
+.Vertical-Footer .CopyRight{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:.5em 0 ;
+  margin-top: .8em;
+  border-top: 1px solid #DADADA;
+}
+.Vertical-Footer .CopyRight a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .9em;
+  color: #DADADA;
+
 }
