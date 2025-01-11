@@ -5,6 +5,35 @@ $('.container-Sec').imagesLoaded( {
     setTimeout(()=>{
 
       gsap.registerPlugin(ScrollTrigger);
+      gsap.to(".preLoad", {
+        scale: 0,
+        delay: 5,
+        ease: "expo.in",
+      });
+      gsap.to(".blinder", {
+        scaleY: 0,
+        stagger: 0.15,
+  
+        delay: 0.8,
+        duration: 2,
+        ease: "expo.in",
+      });
+      gsap.to(".secondP .char", {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        delay: 1.2,
+        duration: 1.5,
+        ease: "expo.in",
+      });
+      gsap.to(".firstP .char", {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        delay: 1.2,
+        duration: 1.5,
+        ease: "expo.in",
+      });
       const pageContainer = document.querySelector(".container-Sec");
       /* SMOOTH SCROLL */
       const scroller = new LocomotiveScroll({
@@ -61,7 +90,18 @@ $('.container-Sec').imagesLoaded( {
         scroller.update()
       });
       
-    // let sliders = document.querySelectorAll('.swiper-first swiper-slide')
+       gsap.to('.Horizontal-Header .Logo-2',{
+        opacity:1,
+        duration:1,
+        
+        scrollTrigger: {
+          trigger:'.swiper-first',
+          scrub:true,
+          containerAnimation:scrollTween,
+          start: "top 20%",  
+        },
+        ease:"slow(0.5, 0.8)"
+       })
     gsap.to('.Logo_First',{
       opacity:0,
       duration:1,
@@ -74,7 +114,8 @@ $('.container-Sec').imagesLoaded( {
       },
       ease:"slow(0.5, 0.8)"
      })
-     var swiper = new Swiper('.swiper-first', {
+     setTimeout(() => {
+      var swiper = new Swiper('.swiper-first', {
         loop: true,
         effect: "fade",
         fadeEffect: {
@@ -86,6 +127,8 @@ $('.container-Sec').imagesLoaded( {
         },
        speed:4000,
       });
+     }, 4000);
+    
 
     gsap.set('.About_Us img',{
       scale:1.1,

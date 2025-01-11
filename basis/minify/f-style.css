@@ -66,3 +66,48 @@ font-family: "IRANSansWeb400";
     height: 630px;
     object-fit: cover;
 }
+.Product-Cat-Container .Product:hover img{
+     transform:scale(1.2) ;
+     -webkit-transform:scale(1.2) ;
+     -moz-transform:scale(1.2) ;
+     -ms-transform:scale(1.2) ;
+     -o-transform:scale(1.2) ;
+}
+.Product-Cat-Container .Product img,
+.Product-Cat-Container .Product .Title{
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+}
+.Product-Cat-Container .Product .IMG{
+    overflow: hidden;
+}
+.Product-Cat-Container .Product:hover .Title{
+    transform:scale(.8);
+    -webkit-transform:scale(.8);
+    -moz-transform:scale(.8);
+    -ms-transform:scale(.8);
+    -o-transform:scale(.8);
+}
+.horizontal .Footer footer .Top{
+    flex-direction: column;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.horizontal .Footer footer .Top .CopyRight{
+    width: max-content;
+    display: flex;
+    transform:rotate(90deg) translate(-13em,3em);
+    -webkit-transform:rotate(90deg) translate(-13em,3em);
+    -moz-transform:rotate(90deg) translate(-13em,3em);
+    -ms-transform:rotate(90deg) translate(-13em,3em);
+    -o-transform:rotate(90deg) translate(-13em,3em);
+}
+.horizontal .Footer footer .Top .CopyRight a{
+    width: max-content;
+    display: flex;
+    transform: translate(4em, 2em);
+    gap: .9em;
+}

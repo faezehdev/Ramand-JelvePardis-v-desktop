@@ -867,6 +867,10 @@ video {
   margin-bottom: 8em;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -945,6 +949,10 @@ video {
 
 .mt-\[2em\] {
   margin-top: 2em;
+}
+
+.mt-\[4em\] {
+  margin-top: 4em;
 }
 
 .mt-\[5em\] {
@@ -1159,6 +1167,10 @@ video {
   width: 30em;
 }
 
+.w-\[330px\] {
+  width: 330px;
+}
+
 .w-\[34px\] {
   width: 34px;
 }
@@ -1328,6 +1340,11 @@ video {
 
 .translate-x-\[100\%\] {
   --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[16px\] {
+  --tw-translate-x: 16px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1888,6 +1905,10 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-\[\.2em\] {
+  gap: .2em;
 }
 
 .gap-\[\.5em\] {
@@ -2711,6 +2732,10 @@ video {
   padding-bottom: .2em;
 }
 
+.pb-\[\.5em\] {
+  padding-bottom: .5em;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -2761,6 +2786,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-\[1\.5em\] {
+  padding-top: 1.5em;
 }
 
 .pt-\[1em\] {
@@ -3598,6 +3627,24 @@ video {
   font-display: swap;
 }
 
+@font-face{
+  font-family: "IRANSansWeb700";
+
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
+
+  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
+    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Roboto400";
 
@@ -3731,7 +3778,7 @@ header .Menu-link{
   background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.75) 100%);
 }
 
-header:hover .ov{
+.horizontall header:hover .ov{
   transition: all .5s ease;
   opacity: 1;
   -webkit-transition: all .5s ease;
@@ -3740,7 +3787,17 @@ header:hover .ov{
   -o-transition: all .5s ease;
 }
 
-header .ov{
+.Horizontal-Header .Logo-2{
+  transition: all .5s ease;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.horizontall header .ov,
+.horizontall header .ov{
   background: linear-gradient(90deg, #FFEC87 0%, #DADADA 36%);
   opacity: 0;
   transition: all .5s ease;
@@ -3840,16 +3897,6 @@ main.Product-C .Section-3 a,
   -moz-transition:all .8s ease ;
   -ms-transition:all .8s ease ;
   -o-transition:all .8s ease ;
-  font-family: "IRANSansWeb700";
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 h1 {
@@ -4005,6 +4052,47 @@ footer .Address p{
   font-size: 12px;
   font-weight: 400;
   line-height: 18.78px;
+  color: #DADADA;
+  text-align: center;
+}
+
+.preLoad {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10005899999521000;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.preLoad, .preLoad .blinder {
+  transform-origin: top;
+  height: 100vh;
+}
+
+.preLoad .blinder {
+  width: 34%;
+  background-color:#FFEC87;
+}
+
+.Vertical-Footer .CopyRight{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:.5em 0 ;
+  margin-top: .8em;
+  border-top: 1px solid #DADADA;
+}
+
+.Vertical-Footer .CopyRight a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .9em;
   color: #DADADA;
 }
 

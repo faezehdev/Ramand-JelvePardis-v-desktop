@@ -25,3 +25,9 @@ OpBtn.addEventListener('click',()=>{
             }, 1000);
     }
 })
+let pFooter = document.querySelectorAll('footer .Address p')
+pFooter.forEach(p=>{
+    if(p.innerHTML == ''){
+        p.style.display = 'none'
+    }
+})
