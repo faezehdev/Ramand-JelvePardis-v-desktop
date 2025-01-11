@@ -1,0 +1,188 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360607"> <member name="aboutus" type="view"/> </basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2360607"> <member name="image-about" type="list" format="4"/> </basis> 
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2360607"> <member name="video-about" type="list" format="3"/> </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360620"> <member name="history" type="view"/> </basis>	
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360624"> <member name="project" type="view"/> </basis>	
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره ما</title>
+
+  <meta name="description" content="درباره رامند جلوه پردیس" />
+
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css" />
+
+  <style>
+    .section1 .imgS::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #212223;
+        transform-origin: top;
+        transition: 1s ease;
+    }
+
+    .activeImg::after{
+        transform: scaleY(0);
+    }
+</style>
+</head>
+
+<body>
+  <basis core="call" file="menu.inc" />
+  <div dir="ltr" style="left: 42px;justify-content: end;" class="Top w-[95%] mx-auto flex items-center mt-[1em] absolute top-0 z-1">
+    <div class="Left">
+        <div class="Logo">
+            <a href="/" title="صفحه اصلی" alt="صفحه اصلی">
+                <svg width="77" height="23" viewBox="0 0 77 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.4878 18.4064H45.8537C46.0681 18.4064 46.2824 18.4064 46.4968 18.3915C48.4073 18.2946 49.3174 17.5608 49.5055 15.6779C49.6362 14.4139 49.6211 13.1392 49.4603 11.8785C49.2215 10.0757 48.3415 9.35119 46.5194 9.14632C46.2068 9.11908 45.8929 9.10789 45.5792 9.1128C44.3926 9.1128 43.2061 9.1128 41.9575 9.1128V22.2933H41.3389C39.9361 22.2933 38.5314 22.2784 37.1267 22.2933C36.9561 22.3071 36.7849 22.2733 36.6326 22.1956C36.4804 22.1179 36.3532 21.9995 36.2655 21.8538C34.271 19.0961 32.2709 16.3434 30.2651 13.5957L29.5976 12.6831C29.5713 12.9774 29.5562 13.1319 29.5468 13.2865C29.4885 14.1526 29.5073 15.0298 29.3588 15.8809C28.8943 18.533 27.2095 20.2521 24.7894 21.2634C20.9158 22.8837 17.0008 22.8409 13.1309 21.2298C11.2072 20.429 9.69161 19.1327 8.71944 17.1325C6.53817 20.064 3.09515 20.7493 0.0488906 22.2989C0.0263257 22.0475 0.00188041 21.8873 0 21.729C0 20.2241 0.0112824 18.7174 0 17.2126C0 16.8401 0.0940203 16.6315 0.466341 16.4676C2.22264 15.7226 3.95449 14.9273 5.71079 14.1842C7.32418 13.5044 8.21362 12.3311 8.26439 10.5879C8.30952 9.06624 8.28695 7.5409 8.29447 6.01742C8.29447 5.78834 8.29447 5.56112 8.29447 5.29479L13.6292 5.29479V5.89263C13.6292 8.3225 13.6292 10.7536 13.6292 13.186C13.6251 13.5907 13.6427 13.9955 13.6818 14.3984C13.9056 16.4098 14.8646 17.5534 16.8315 18.0898C18.4212 18.5413 20.1182 18.4475 21.6472 17.8234C23.2399 17.1846 24.1162 16.0187 24.1463 14.3202C24.1914 11.899 24.1745 9.45921 24.182 7.02686C24.182 6.45323 24.182 5.8796 24.182 5.25754C25.9534 5.25754 27.6457 5.2445 29.34 5.27617C29.5111 5.27617 29.7161 5.5127 29.8439 5.6859C31.9349 8.54165 34.0203 11.4055 36.1 14.2774C36.2129 14.4338 36.3295 14.5884 36.5551 14.892V5.29665C36.7958 5.27803 36.9481 5.25568 37.1004 5.25568C40.4551 5.25568 43.8097 5.25568 47.1644 5.26499C47.8862 5.26444 48.6066 5.32676 49.3174 5.45124C52.138 5.96899 53.7984 7.74018 54.5431 10.3886C55.1308 12.5433 55.1683 14.809 54.6521 16.9816C53.9902 19.9466 51.7601 21.7867 48.4054 22.1965C47.5127 22.276 46.6165 22.3108 45.7202 22.3008C45.6371 22.3034 45.5543 22.2894 45.4767 22.2597C45.3992 22.2299 45.3285 22.185 45.2689 22.1275C44.3531 20.9188 43.4562 19.712 42.4878 18.4064Z" fill="#F6F8F8"/>
+                    <path d="M63.1255 22.2207H57.8867V2.57568L63.1255 2.57568V22.2207Z" fill="#F6F8F8"/>
+                    <path d="M66.2422 22.1743V18.36C66.8439 18.36 67.4231 18.3712 68.0004 18.36C70.2004 18.3097 71.2083 17.4288 71.3005 15.246C71.4039 12.8006 71.3663 10.3478 71.3851 7.90054C71.3851 7.01774 71.3851 6.13495 71.3851 5.22607H76.6766C76.7038 5.37135 76.722 5.51814 76.7311 5.66561C76.7311 8.51887 76.7424 11.374 76.7217 14.2328C76.7104 15.706 76.5336 17.155 75.8341 18.4978C74.6044 20.8725 72.5434 21.9769 69.9428 22.1631C68.7262 22.2469 67.4983 22.1743 66.2422 22.1743Z" fill="#F6F8F8"/>
+                    <path d="M16.4961 5.22415V0L21.7763 0V5.22415L16.4961 5.22415Z" fill="#F6F8F8"/>
+                    </svg>
+                    
+            </a>
+        </div>
+    </div>
+</div>
+  <main class="aboutUs bg-b4">
+    <basis core="print" datamembername="db.image-about">
+        <layout>
+          <section class="section1" dir="rtl">
+            <div class="section1 relative flex justify-center items-center" dir="rtl">
+              @child
+            </div>
+          </section>
+        </layout>
+        <face filter="ord=1">
+          <div class="imgS w-full">
+            <img class="w-full" src="/@largeIMG" alt="@name" title="@name" />
+          </div>
+  
+          <div class="title py-11 text-center absolute left-0 right-0">
+            <h1 class="font-IRANSansWeb300 text-3xl scrollToTop text-b7">
+            @name
+            </h1>
+            <p class="text-clip font-IRANSansWeb400 scrollToTop text-base text-b1 mt-1">
+              @description
+            </p>
+          </div>
+            
+        </face>
+    </basis>
+    <basis core="print" datamembername="db.aboutus">
+        <layout>
+          <section class="section2 py-40 flex justify-center" dir="rtl">
+            <div class="para scrollToTop max-w-[885px] font-IRANSansWeb400 text-sm text-center text-b1">
+          
+              @child
+            </div>
+          </section>
+        </layout>
+        <face filter="TypeID=250">
+            @Answer
+        </face>
+    </basis>
+
+    <section class="section3" dir="rtl">
+      <div class="inVideo flex justify-center items-center">
+        <basis core="print" datamembername="db.image-about">
+
+            <face filter="ord=10">
+              <video class="w-full object-cover" poster="/@largeIMG" playsinline loop>
+                
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.video-about">
+            <face>
+                
+              <source src="/@largeIMG">
+            </face>
+        </basis>
+        </video>
+        <div class="playbtn absolute cursor-pointer">
+          <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M39.5052 20.8829L6.34695 0.543446C5.78791 0.200192 5.14763 0.0128033 4.49222 0.000633091C3.83681 -0.0115371 3.19005 0.151952 2.61872 0.474217C2.05283 0.791476 1.58143 1.25415 1.253 1.81466C0.924563 2.37516 0.750946 3.01327 0.75 3.66337V44.3378C0.754264 45.3129 1.14453 46.2465 1.83502 46.9332C2.5255 47.6199 3.45968 48.0037 4.4322 48C5.111 47.9997 5.77662 47.8121 6.35615 47.4577L39.5052 27.1182C40.038 26.7925 40.4784 26.3349 40.7839 25.7894C41.0895 25.2438 41.25 24.6286 41.25 24.0029C41.25 23.3772 41.0895 22.762 40.7839 22.2164C40.4784 21.6708 40.038 21.2132 39.5052 20.8876V20.8829ZM4.4322 44.2939V3.69337L37.5329 24.0006L4.4322 44.2939Z"
+              fill="#F6F8F8" />
+          </svg>
+
+        </div>
+      </div>
+    </section>
+
+
+    <basis core="print" datamembername="db.history">
+        <layout>
+          <div class="section4 my-40 pr-24 pl-10" dir="rtl">
+        
+            @child
+          </div>
+        </layout>
+        <face filter="TypeID=150">
+          <h2 class="font-IRANSansWeb500 scrollToTop text-lg pb-6 border-b text-b2 mb-6">
+          @Answer
+          </h2>
+        </face>
+        <face filter="TypeID=250">
+          <div class="para scrollToTop font-IRANSansWeb400 text-sm text-right text-b1 mb-6">
+            <h3 class="font-IRANSansWeb500 text-base text-b1 mb-1">
+              @text
+            </h3>
+            @largetext
+          </div>
+        </face>
+    </basis>
+
+    <section class="section6 my-40 pr-24 pl-20" dir="rtl">
+      <div class="para scrollToTop font-IRANSansWeb500 text-lg mb-10 text-b7">
+        <basis core="print" datamembername="db.project">
+            <face filter="TypeID=128">
+              <p>
+@Answer
+              </p>
+                
+            </face>
+        </basis>
+      </div>
+      <basis core="print" datamembername="db.project">
+          <layout>
+            <ul>
+              
+              @child
+            </ul>
+          </layout>
+          <face filter="TypeID=250">
+            
+            <li class="grid grid-cols-[3fr,1fr,1fr] py-7 first:border-t border-b2 border-b">
+              <div class="title scrollToTop font-IRANSansWeb300 text-3xl text-b2">
+              @largetext
+              </div>
+              <!-- <div class="name scrollToTop font-IRANSansWeb400 text-lg text-b2">
+                <span>
+                  مهندس علی نعمتی
+                </span>
+              </div>
+              <div class="subj scrollToTop font-IRANSansWeb400 text-lg text-b2 text-left">
+                <span>سنگ</span>
+              </div> -->
+            </li>
+          </face>
+      </basis>
+    </section>
+    <basis core="call" file="footer-v.inc" />
+  </main>
+<basis core="call" file="script.inc" />
+  <script src="[##cms.cms.cdn##]/_js/playVideo.js"></script>
+  <script src="[##cms.cms.cdn##]/js/about.js"></script>
+</body>
+
+</html>

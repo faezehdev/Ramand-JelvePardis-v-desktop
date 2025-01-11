@@ -2,19 +2,20 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .stackEffect .tabs-wrapper {
-  height: 250vh;
   position: relative;
 }
 .stackEffect .tabs {
   width: 100%;
   height: 100vh;
-  color: var(--white-beige);
   justify-content: flex-start;
   align-items: stretch;
   display: flex;
   position: sticky;
-  top: 0;
   overflow: hidden;
   right: 0 !important;
   top: 0 !important;
@@ -30,14 +31,28 @@ body {
   position: relative;
   overflow: hidden;
 }
-.stackEffect .tabs_content.is-1 {
-  background-color: var(--grey);
+.stackEffect .tab-holder {
+  display: none;
+  transition: 1s;
+  opacity: 0;
+}
+.stackEffect .tabs_content.Newactive .tab-holder {
+  opacity: 1 !important;
+}
+.stackEffect .tabs_content.activeDisplay .tab-holder {
+  display: block !important;
+}
+.stackEffect .tabs_content.activeDisplay {
+  display: block;
 }
 .stackEffect .tabs_content.active {
   width: 100%;
 }
+.stackEffect .tabs_content.is-1 {
+  background-color: #747a74;
+}
 .stackEffect .tabs_content.is-2 {
-  background-color: var(--dark-slate-grey);
+  background-color: #5e695e;
 }
 .stackEffect .tabs_content.is-3 {
   background-color: #4e5a4e;

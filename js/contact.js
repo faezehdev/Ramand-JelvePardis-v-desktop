@@ -109,7 +109,34 @@ $(".tabs_content").on("click", function () {
       
 
 
-
+      // setTimeout(() => {
+  
+      //   for (let index = 0; index <=mapDiv.length; index++) {
+      //     if (mapDiv[index]==""||mapDiv[index]==null||mapDiv[index]==undefined) {
+            
+              
+      //     }
+      //     else{
+      //       let xLat = mapDiv[index].getAttribute("data-x")
+      //       let newx=new DOMParser().parseFromString(xLat, "text/xml").all[0].innerHTML;
+      //       let yLat = mapDiv[index].getAttribute("data-y")
+      //       var map = L.map(mapDiv[index]).setView([newx,yLat], 17);
+      //       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      //       // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      //       minZoom: "10",
+        
+      //       }).addTo(map);
+            
+            
+      //       var myIcon = L.icon({ iconUrl: "images/location-64.png", iconSize: [29,34] });
+      //       markerContact = L.marker([yLat, newx], { icon: myIcon });
+      //       markerContact.addTo(map);
+          
+      //     }
+          
+      //     }  
+          
+      // }, 100);
 
       
 
@@ -145,46 +172,34 @@ ScrollTrigger.create({
 
 
 
-setTimeout(() => {
+// setTimeout(() => {
   
-  for (let index = 0; index <=mapDiv.length; index++) {
-    if (mapDiv[index]==""||mapDiv[index]==null||mapDiv[index]==undefined) {
+//   for (let index = 0; index <=mapDiv.length; index++) {
+//     if (mapDiv[index]==""||mapDiv[index]==null||mapDiv[index]==undefined) {
       
         
-    }
-    else{
-      let xLat = mapDiv[index].getAttribute("data-x")
-    //   let newx=new DOMParser().parseFromString(xLat, "text/xml").all[0].innerHTML;
-      let yLat = mapDiv[index].getAttribute("data-y")
-      var map = L.map(mapDiv[index]).setView([xLat,yLat], 17);
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      minZoom: "10",
+//     }
+//     else{
+//       let xLat = mapDiv[index].getAttribute("data-x")
+//       let newx=new DOMParser().parseFromString(xLat, "text/xml").all[0].innerHTML;
+//       let yLat = mapDiv[index].getAttribute("data-y")
+//       var map = L.map(mapDiv[index]).setView([newx,yLat], 17);
+//       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+//       // attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+//       minZoom: "10",
   
-      }).addTo(map);
+//       }).addTo(map);
       
       
-      var myIcon = L.icon({ iconUrl: "images/location-64.png", iconSize: [29,34] });
-      markerContact = L.marker([yLat, xLat], { icon: myIcon });
-      markerContact.addTo(map);
+//       var myIcon = L.icon({ iconUrl: "images/location-64.png", iconSize: [29,34] });
+//       markerContact = L.marker([yLat, newx], { icon: myIcon });
+//       markerContact.addTo(map);
     
-    }
+//     }
     
-    }  
+//     }  
     
-}, 100);
-
-
-
-
-
-
-
-
-
-
-
-
+// }, 100);
 
       }, 1200);
     }

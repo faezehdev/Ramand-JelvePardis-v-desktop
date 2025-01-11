@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
 speed : 1000,
-  
+  loop:true,
     // If we need pagination
     pagination: {
       el: '.articlePaginetion',
@@ -8,11 +8,20 @@ speed : 1000,
     },
   // Navigation arrows
   navigation: {
-    nextEl: '.nextArt',
-    prevEl: '.prevArt',
+    nextEl: '.prevArt',
+    prevEl: '.nextArt',
   },
   });
 
+  const lenis = new Lenis()
+
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  
+  requestAnimationFrame(raf);
 
   gsap.registerPlugin(ScrollTrigger) 
   // Scale in animation
@@ -30,3 +39,8 @@ speed : 1000,
    
   })
   
+
+
+  $('.section1').imagesLoaded( function() {
+    $(".section1 .imgS").addClass("activeImg")
+  });

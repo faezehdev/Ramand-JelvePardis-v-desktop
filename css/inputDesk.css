@@ -119,7 +119,6 @@ article .section1 .title {
 
 
 .stackEffect .tabs-wrapper {
-  /* height: 250vh; */
   position: relative;
 }
 .stackEffect .tabs {
@@ -130,7 +129,6 @@ article .section1 .title {
   align-items: stretch;
   display: flex;
   position: sticky;
-  top: 0;
   overflow: hidden;
   right: 0 !important;
   top: 0 !important;
@@ -153,9 +151,6 @@ article .section1 .title {
 .stackEffect .tabs_content.activeDisplay .tab_wrap{
 display: block!important;
 }
-/* .stackEffect .tabs_content.active .inter-onglet{
-  display: none;
-} */
 .stackEffect .tabs_content.active {
   width: 100%;
   flex: 1;

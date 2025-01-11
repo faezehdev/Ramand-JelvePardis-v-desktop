@@ -1,0 +1,217 @@
+
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="10" catid="209938">
+    <member name="list-namayandegi" type="list"/>
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634">
+    <member name="contact" type="view" />
+</basis>
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <meta name="description" content="تماس با رامند جلوه پردیس" />
+
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/leaflet.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputDesk.css">
+    <style>
+        .tabs{
+            margin-right: 3vw !important;
+            width: 96vw !important;
+        }
+    </style>
+</head>
+
+<body>
+    <basis core="call" file="menu.inc" />
+    <div dir="ltr" style="left: 42px;justify-content: end;" class="Top w-[95%] mx-auto flex items-center mt-[1em] fixed top-0 z-1">
+        <div class="Left">
+            <div class="Logo">
+                <a href="/" title="صفحه اصلی" alt="صفحه اصلی">
+                    <svg width="77" height="23" viewBox="0 0 77 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.4878 18.4064H45.8537C46.0681 18.4064 46.2824 18.4064 46.4968 18.3915C48.4073 18.2946 49.3174 17.5608 49.5055 15.6779C49.6362 14.4139 49.6211 13.1392 49.4603 11.8785C49.2215 10.0757 48.3415 9.35119 46.5194 9.14632C46.2068 9.11908 45.8929 9.10789 45.5792 9.1128C44.3926 9.1128 43.2061 9.1128 41.9575 9.1128V22.2933H41.3389C39.9361 22.2933 38.5314 22.2784 37.1267 22.2933C36.9561 22.3071 36.7849 22.2733 36.6326 22.1956C36.4804 22.1179 36.3532 21.9995 36.2655 21.8538C34.271 19.0961 32.2709 16.3434 30.2651 13.5957L29.5976 12.6831C29.5713 12.9774 29.5562 13.1319 29.5468 13.2865C29.4885 14.1526 29.5073 15.0298 29.3588 15.8809C28.8943 18.533 27.2095 20.2521 24.7894 21.2634C20.9158 22.8837 17.0008 22.8409 13.1309 21.2298C11.2072 20.429 9.69161 19.1327 8.71944 17.1325C6.53817 20.064 3.09515 20.7493 0.0488906 22.2989C0.0263257 22.0475 0.00188041 21.8873 0 21.729C0 20.2241 0.0112824 18.7174 0 17.2126C0 16.8401 0.0940203 16.6315 0.466341 16.4676C2.22264 15.7226 3.95449 14.9273 5.71079 14.1842C7.32418 13.5044 8.21362 12.3311 8.26439 10.5879C8.30952 9.06624 8.28695 7.5409 8.29447 6.01742C8.29447 5.78834 8.29447 5.56112 8.29447 5.29479L13.6292 5.29479V5.89263C13.6292 8.3225 13.6292 10.7536 13.6292 13.186C13.6251 13.5907 13.6427 13.9955 13.6818 14.3984C13.9056 16.4098 14.8646 17.5534 16.8315 18.0898C18.4212 18.5413 20.1182 18.4475 21.6472 17.8234C23.2399 17.1846 24.1162 16.0187 24.1463 14.3202C24.1914 11.899 24.1745 9.45921 24.182 7.02686C24.182 6.45323 24.182 5.8796 24.182 5.25754C25.9534 5.25754 27.6457 5.2445 29.34 5.27617C29.5111 5.27617 29.7161 5.5127 29.8439 5.6859C31.9349 8.54165 34.0203 11.4055 36.1 14.2774C36.2129 14.4338 36.3295 14.5884 36.5551 14.892V5.29665C36.7958 5.27803 36.9481 5.25568 37.1004 5.25568C40.4551 5.25568 43.8097 5.25568 47.1644 5.26499C47.8862 5.26444 48.6066 5.32676 49.3174 5.45124C52.138 5.96899 53.7984 7.74018 54.5431 10.3886C55.1308 12.5433 55.1683 14.809 54.6521 16.9816C53.9902 19.9466 51.7601 21.7867 48.4054 22.1965C47.5127 22.276 46.6165 22.3108 45.7202 22.3008C45.6371 22.3034 45.5543 22.2894 45.4767 22.2597C45.3992 22.2299 45.3285 22.185 45.2689 22.1275C44.3531 20.9188 43.4562 19.712 42.4878 18.4064Z" fill="#F6F8F8"/>
+                        <path d="M63.1255 22.2207H57.8867V2.57568L63.1255 2.57568V22.2207Z" fill="#F6F8F8"/>
+                        <path d="M66.2422 22.1743V18.36C66.8439 18.36 67.4231 18.3712 68.0004 18.36C70.2004 18.3097 71.2083 17.4288 71.3005 15.246C71.4039 12.8006 71.3663 10.3478 71.3851 7.90054C71.3851 7.01774 71.3851 6.13495 71.3851 5.22607H76.6766C76.7038 5.37135 76.722 5.51814 76.7311 5.66561C76.7311 8.51887 76.7424 11.374 76.7217 14.2328C76.7104 15.706 76.5336 17.155 75.8341 18.4978C74.6044 20.8725 72.5434 21.9769 69.9428 22.1631C68.7262 22.2469 67.4983 22.1743 66.2422 22.1743Z" fill="#F6F8F8"/>
+                        <path d="M16.4961 5.22415V0L21.7763 0V5.22415L16.4961 5.22415Z" fill="#F6F8F8"/>
+                        </svg>
+                        
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contactUs">
+        <div class="stackEffect" dir="rtl">
+            <main class="tabs-wrapper">
+                <div class="tabs">
+                 
+
+                    <basis core="repeater" name="rep" datamembername="db.list-namayandegi">
+                        <basis core="dbsource" name="db" source="basiscore" lid="1" mid="10" usedforid="[##rep.current.id##]"> <member name="contactus" type="view"/> </basis>	
+
+                        <div class="tabs_content is-1">
+                            <div class="inter-onglet is-1">
+                                <div class="inner-onglet h-full flex items-center justify-center relative">
+                                    <div class="number w-full absolute top-20">
+                                        <span class="flex justify-center items-center gap-x-1">
+    
+                                        </span>
+                                    </div>
+                                    <h1 class="mainT font-IRANSansWeb400 rotate-180 text-lg [writing-mode:vertical-lr]">
+                                        
+                                      [##rep.current.title##]
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="tab-holder h-full" >
+                                <div class="tab_wrap pt-20 h-full opacity-0 duration-1000 " style="display: none;">
+    
+                                    <div
+                                        class="info pr-24 flex items-center gap-x-10 relative">
+                                        <p class="whitespace-nowrap spColor font-IRANSansWeb500 text-base text-b3">
+                                            [##rep.current.title##]
+                                        </p>
+    
+                                        <div class="line w-full h-px spColor"></div>
+                                    </div>
+                                    <div class="flex mb-12 pt-7 gap-x-10 pl-10 pr-24" style="height: 100%;height: -moz-available;height: -webkit-fill-available;height: fill-available;">
+                                        <div class="rSide w-[65%]">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.293539265678!2d51.410644!3d35.7927264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e06ee4c24a121%3A0xc4a01e5a6eaf445d!2sRamand%20Co.!5e0!3m2!1sen!2sus!4v1725195860610!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <div class="lside w-[35%] flex flex-col justify-end">
+                                         
+                                            <h2 class="font-IRANSansWeb500 text-lg spColor mb-4">
+                                                آدرس [##rep.current.title##]
+
+                                            </h2>
+                                            <basis core="print" datamembername="db.contactus">
+                                                <layout>
+                                                    <div class="address mb-6 flex gap-x-2 spColor font-IRANSansWeb400 text-base text-justify">
+                                                        <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.9999 7.8C10.9999 11.5556 6.02532 18 6.02532 18C6.02532 18 1.05078 11.5556 1.05078 7.8C1.05078 4.04446 3.27796 1 6.02532 1C8.77269 1 10.9999 4.04446 10.9999 7.8Z" stroke="#6B6B6B"/>
+                                                            <path d="M6.02807 8.64727C6.3715 8.64727 6.64988 8.26672 6.64988 7.79727C6.64988 7.32783 6.3715 6.94727 6.02807 6.94727C5.68464 6.94727 5.40625 7.32783 5.40625 7.79727C5.40625 8.26672 5.68464 8.64727 6.02807 8.64727Z" fill="#6B6B6B" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        @child
+                                                                                              
+                                                    </div>
+                                                </layout>
+                                                <face filter="TypeID=244">
+                                                    @largetext
+                                                </face>
+                                            </basis>
+
+
+                                            <h3 class="font-IRANSansWeb500 text-lg spColor mb-4">
+                                                راه‌های ارتباطی
+                                            </h3>
+                                            <ul>
+                                            <basis core="print" datamembername="db.contactus">
+                                             
+                                                <face filter="TypeID=240">
+                                                    
+                                                    <li class="flex gap-x-2 mb-1" dir="ltr" style="direction: ltr;">
+                                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.44522 12.6322L8.10163 13.363C10.5714 12.0844 12.097 10.6157 12.9849 8.32624L12.3013 4.54398L13.5935 1L16.9238 1C17.9249 1 18.7133 1.85331 18.5638 2.87431C18.1905 5.42322 17.0899 10.0447 13.8728 13.363C10.4943 16.8477 5.6283 18.3599 2.95023 18.9609C1.91604 19.1931 0.998697 18.3609 0.998697 17.2693L0.998697 13.9869L4.44522 12.6322Z" stroke="#6B6B6B" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        <p class="font-IRANSansWeb400 text-base spColor">
+                                                            @Answer
+                                                        </p>                                                    
+                                                    </li>
+                                                </face>
+                                               
+                                            </basis>
+                                            <basis core="print" datamembername="db.contactus">
+                                             
+                                      
+                                                <face filter="TypeID=128">
+                                                    
+                                                    <li class="flex gap-x-2 mb-1" dir="ltr" style="direction: ltr;">
+                                                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.88281 5.00098L10.7671 8.50098L15.6513 5.00098" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1 13V3C1 1.89543 1.8747 1 2.9537 1L18.5833 1C19.6624 1 20.537 1.89543 20.537 3V13C20.537 14.1046 19.6624 15 18.5833 15H2.9537C1.8747 15 1 14.1046 1 13Z" stroke="#6B6B6B"/>
+                                                            </svg>
+                                                            
+                                                        <a href="mailto:@Answer" class="font-IRANSansWeb400 text-base spColor">
+                                                            @Answer
+                                                        </a>                                                    
+                                                    </li>
+                                                </face>
+                                            </basis>
+                                        </ul>
+                                            <div class="social mt-6 pt-3 border-t spColor flex items-center justify-between">
+                                                <p>
+                                                    ما را در شبکه‌های اجتماعی دنبال کنید
+                                                </p>
+                                                <ul class="flex gap-x-2">
+                                                    <basis core="print" datamembername="db.contact">
+                                                        <face filter="text='واتس اپ'">
+                                                            <li>
+                                                                <a href="https://wa.me/@largetext" title="whatsap">
+                                                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4.44522 12.6322L8.10163 13.363C10.5714 12.0844 12.097 10.6157 12.9849 8.32624L12.3013 4.54398L13.5935 1L16.9238 1C17.9249 1 18.7133 1.85331 18.5638 2.87431C18.1905 5.42322 17.0899 10.0447 13.8728 13.363C10.4943 16.8477 5.6283 18.3599 2.95023 18.9609C1.91604 19.1931 0.998697 18.3609 0.998697 17.2693L0.998697 13.9869L4.44522 12.6322Z" stroke="#6B6B6B" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                        
+                                                                </a>
+                                                            </li>
+                                                            
+                                                        </face>
+                                                    </basis>
+                                                    <basis core="print" datamembername="db.contact">
+
+                                                        <face filter="text='تلگرام'">
+                                                            <li>
+                                                                <a href="https://t.me/@largetext" title="telegram">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M15.4515 6.0542L3.58594 10.2187L7.69325 11.6068M15.4515 6.0542L7.69325 11.6068M15.4515 6.0542L11.8006 15.7713L7.69325 11.6068" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M9.97501 19.0092C15.0159 19.0092 19.1024 14.8659 19.1024 9.75487C19.1024 4.64381 15.0159 0.500488 9.97501 0.500488C4.93411 0.500488 0.847656 4.64381 0.847656 9.75487C0.847656 14.8659 4.93411 19.0092 9.97501 19.0092Z" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                        
+                                                                </a>
+                                                            </li>
+                                                            
+                                                        </face>
+                                                    </basis>
+                                                    <basis core="print" datamembername="db.contact">
+                                                        <face filter="text='اینستاگرام'">
+                                                            
+                                                            <li>
+                                                                <a href="https://instagram.com/@largetext" title="instagram">
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M10.1269 14.3575C12.3673 14.3575 14.1835 12.5159 14.1835 10.2444C14.1835 7.97283 12.3673 6.13135 10.1269 6.13135C7.88651 6.13135 6.07031 7.97283 6.07031 10.2444C6.07031 12.5159 7.88651 14.3575 10.1269 14.3575Z" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M1 14.3582L1 6.13205C1 3.29258 3.27026 0.990723 6.07075 0.990723L14.184 0.990723C16.9844 0.990723 19.2547 3.29258 19.2547 6.13205V14.3582C19.2547 17.1976 16.9844 19.4995 14.184 19.4995H6.07075C3.27026 19.4995 1 17.1976 1 14.3582Z" stroke="#6B6B6B"/>
+                                                                        <path d="M15.707 4.60056L15.718 4.58838" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                        
+                                                                </a>
+                                                            </li>
+                                                        </face>
+                                                    </basis>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </basis>
+               
+               
+         
+               
+         
+                  
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <basis core="call" file="script.inc" />
+    <script src="[##cms.cms.cdn##]/_js/leaflet.js"></script>
+    <script src="[##cms.cms.cdn##]/js/contact.js"></script>
+</body>
+
+</html>
